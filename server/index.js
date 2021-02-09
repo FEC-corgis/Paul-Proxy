@@ -11,9 +11,10 @@ app.use('/rooms/:id', express.static(path.join(__dirname, '../client')));
 app.use('/propertyDetails/:id', createProxyMiddleware({target: 'http://localhost:5545', changeOrigin:true}));
 
 // jenny
-app.use('/reviews/:id', createProxyMiddleware({ target: 'http://localhost:1984', changeOrigin: true }))
+app.use('/reviews/propsId/:id', createProxyMiddleware({ target: 'http://localhost:1984', changeOrigin: true }))
 
 //dane
+app.use('/api/headerService/:id', createProxyMiddleware({ target: 'http://localhost:5001', changeOrigin: true }))
 
 //slava
 
