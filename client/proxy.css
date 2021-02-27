@@ -146,3 +146,101 @@
   display: flex;
   flex-direction: row;
 }
+
+/*Nav Bar*/
+.navbar {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px !important;
+    padding-right: 80px;
+    padding-left: 80px;
+    top: 0;
+}@media (max-width: 1128px) {
+    .navbar {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}@media (max-width: 743px) {
+    .navbar {
+        display: none;
+    }
+}.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1128px;
+    width: 100%;
+}.logo-container {
+    margin-right: 140px;
+}@media (max-width: 1128px) {
+    .logo-container {
+        margin-right: 0;
+    }
+}.desktop-logo {
+    display: none;
+}@media (min-width: 1128px) {
+    .desktop-logo {
+        display: block;
+    }    .mobile-logo {
+        display: none;
+    }
+}.search {
+    height: 48px;
+}.search:hover,
+.user-button-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px !important;
+    transition: box-shadow 0.2s ease 0s;
+    border-radius: 24px;
+}.search-button,
+.user-button-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid rgb(221, 221, 221);
+    height: 100%;
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.search-button span {
+    padding: 0 16px;
+}.search-button:focus {
+    outline: none;
+}.search-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff385c;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin: 7px 7px 7px 0px;
+}.other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+}.become-a-host,
+.globe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 18px;
+    border-radius: 22px;
+    height: 100%;
+    padding: 15px;
+    margin-right: 5px;
+}.become-a-host:hover,
+.globe:hover {
+    background: rgba(0, 0, 0, 0.03);
+}.user-button-container {
+    width: 77px;
+    padding: 5px 5px 5px 12px;
+}
