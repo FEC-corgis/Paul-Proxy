@@ -18,7 +18,7 @@ app.use('/morePlaces/propId/:id', createProxyMiddleware({ target: 'http://3.140.
 
 //dane
 app.use('/api/headerService/:propertyId', createProxyMiddleware({ target: 'http://54.211.95.226:5001', changeOrigin: true }))
-app.use('/api/hostedByService/:propertyId', createProxyMiddleware({ target: 'http://54.237.132.122:002', changeOrigin: true }))
+app.use('/api/hostedByService/:propertyId', createProxyMiddleware({ target: 'http://54.237.132.122:5002', changeOrigin: true }))
 
 app.get('*', (req, res)=>{
   res.sendFile(path.join(__dirname, '..', 'client', 'index.html'));
